@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado</title>
+</head>
+<body>
+		<form th:object="${persona}">
+			<label for="fnombre">Nombre:</label><br>
+			<input type="text" id="fnombre" th:field="*{nombre}"><br>
+			<label for="fapellido">Apellido:</label><br>
+			<input type="text" id="fapellido" th:field="*{apellido}"><br>
+			<label for="fedad">Edad:</label><br>
+			<input type="text" id="fedad" th:field="*{edad}"><br>
+			<label for="fsigno">Signo Zodiacal:</label><br>
+			<input type="text" id="fsigno" th:field="*{signoZodiacal}"><br>
+			<label for="festacion">Estacion:</label><br>
+			<input type="text" id="festacion" th:field="*{estacion}"><br>
+
+		</form>
+</body>
+</html>

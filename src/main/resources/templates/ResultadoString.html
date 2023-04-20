@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ResultadoString</title>
+</head>
+<body>
+	<form th:object="${ProcesoString}">
+		<label for="fcadena">Cadena Principal:</label><br>
+		<input type="text" id="fcadena" th:field="*{cadena}"><br>
+		<label for="fmensaje1">Mensaje1:</label><br>
+		<input type="text" style="WIDTH: 600px" size=32 id="fmensaje1" th:field="*{mensaje1}"><br>
+		<label for="fcadenaInvertida">Cadena Invertida:</label><br>
+		<input type="text" style="WIDTH: 600px" size=32 id="fcadenaInvertida" th:field="*{cadenaInvertida}"><br>
+		<label for="fmensaje2">Mensaje2</label><br>
+		<input type="text" style="WIDTH: 600px" size=32 id="fmensaje2" th:field="*{mensaje2}"><br>
+	</form>
+</body>
+</html>

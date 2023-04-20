@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Max</title>
+</head>
+<body>
+		<form th:object="${persona}" th:action="@{/guardarPersona}" method="post">
+		<label for="fnombre">Nombre:</label><br>
+		<input type="text" id="fnombre" th:field="*{nombre}"><br>
+		<label for="fapellido">Apellido:</label><br>
+		<input type="text" id="fapellido" th:field="*{apellido}"><br>
+		<label for="fnacimiento">Fecha de Nacimiento: </label><br>
+		<input type="date" id="fnacimiento" th:field="*{fechaNacimiento}"><br>
+		<input type="submit" value="Ingresar EDM">
+		</form>
+</body>
+</html>
